@@ -15,10 +15,10 @@ from pyannote.audio.pipelines import VoiceActivityDetection
 from pyannote.core.annotation import Segment
 from scipy.spatial.distance import cdist
 import torch
+from constant import HUGGINGFACE_TOKEN, AUDIO_DB_PATH, AUDIO_THRESHOLD
 
-HUGGINGFACE_TOKEN = "***REMOVED***ZNbMBKZmcuUqVjmknyDjOSfczHqY"
-DB_PATH = Path("../known_voices/")
-THRESHOLD = 0.45
+DB_PATH = AUDIO_DB_PATH
+THRESHOLD = AUDIO_THRESHOLD
 
 
 class AudioDiarization:
