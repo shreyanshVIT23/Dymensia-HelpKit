@@ -13,7 +13,7 @@ from pyannote.audio import Inference, Model, Pipeline
 from pyannote.audio.pipelines import VoiceActivityDetection
 from pyannote.core.annotation import Segment
 from scipy.spatial.distance import cdist
-from constant import HUGGINGFACE_TOKEN, AUDIO_DB_PATH, AUDIO_THRESHOLD
+from pipeline.constant import HUGGINGFACE_TOKEN, AUDIO_DB_PATH, AUDIO_THRESHOLD
 
 DB_PATH = AUDIO_DB_PATH
 THRESHOLD = AUDIO_THRESHOLD
